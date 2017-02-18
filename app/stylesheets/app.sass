@@ -3,3 +3,134 @@
 @import 'tools/_settings'
 @import 'tools/_mixins'
 @import 'tools/_fonts'
+
+.welcome
+  height: 100vh
+  width: 100%
+  background: url('../images/background.jpg') no-repeat center / cover
+
+  .container
+    display: flex
+    flex-flow: column nowrap
+    align-items: flex-end
+    text-align: right
+
+  &__inner
+    position: absolute
+    top: 50%
+    right: 65px
+    transform: translateY(-50%)
+
+  &__title
+    font-size: 40px
+    line-height: 60px
+
+  &__logo
+    margin-top: 50px
+
+  &__vc
+    margin-top: 15px
+    font-size: 34px
+    line-height: 60px
+    margin-bottom: 10px
+
+  &__button
+    margin-top: 80px
+
+    a
+      background: #9061a9
+      padding: 15px 20px
+      max-width: 285px
+      color: #fff
+      text-decoration: none
+      font-size: 18px
+      transition: background .2s ease
+
+      &:hover
+        background: #5DB5E5
+
+.nav
+  padding: 2% 0
+  background: #e7e7e7
+
+  .container
+    display: flex
+    flex-flow: row nowrap
+    align-items: center
+    justify-content: center
+
+
+  &__item
+    padding: 15px 20px
+    color: #fff
+    font-weight: bold
+    text-decoration: none
+    width: 25%
+    text-align: center
+    min-width: 300px
+
+    &_green
+      background: #91C74B
+
+    &_orange
+      background: #f8af2d
+      margin: 0 5%
+
+    &_blue
+      background: #5db6e5
+
+
+.works
+  height: 1px
+  min-height: 100vh
+  background: url('../images/background-2.jpg') no-repeat center / cover
+  padding: 15px 0 40px 0
+
+  .container
+    height: 1px
+
+  &__title
+    font-size: 40px
+    text-align: center
+
+  &__inner
+    display: flex
+    flex-flow: row nowrap
+    justify-content: space-between
+    height: 82%
+    margin-top: 35px
+
+  &__column
+    display: flex
+    flex-flow: column nowrap
+    justify-content: space-between
+    height: 100%
+
+  &__item
+    background: #9061a9
+    width: 200px
+    height: 200px
+    position: relative
+    color: #fff
+
+    &:not(:first-child)
+      margin-top: 15%
+
+    &_green
+      background: #91C74B
+
+    &_orange
+      background: #f8af2d
+
+    &_blue
+      background: #5db6e5
+
+  &__text
+    position: absolute
+    top: 50%
+    left: 50%
+    width: 75%
+    transform: translate(-50%, -50%)
+    text-align: center
+    line-height: 22px
+    font-size: 16px

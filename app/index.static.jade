@@ -12,3 +12,51 @@ head
     require('initialize');
 
 body
+  .welcome
+    .container
+      .welcome__logo
+        img(src="images/logo.svg")
+      .welcome__inner
+        .welcome__title
+          Присоединяйтесь к нам!
+        .welcome__vc
+          Вакансия
+        .welcome__title
+          Менеджер по продажам
+        .welcome__button
+          a(href="#")
+            |ПРОЙТИ ОНЛАЙН ИНТЕРВЬЮ
+
+  .nav
+    .container
+      a.nav__item.nav__item_green(href="#") Наши предложения о работе
+      a.nav__item.nav__item_orange(href="#") О вакансии
+      a.nav__item.nav__item_blue(href="#") Как откликнуться на вакансию
+
+  .works
+    .container
+      .works__title
+        |Наши предложения о работе
+
+      .works__inner
+        .works__column
+          .works__item.works__item_orange
+            .works__text
+              |Возможность увеличивать свой заработок
+          .works__item.works__item_green
+            .works__text
+              |Лучшие мотивации с возможностью поездок по всему миру
+          .works__item.works__item_blue
+            .works__text
+              |Гибкий рабочий график 5/2, 2/2
+
+        .works__column
+          .works__item.works__item_purple
+            .works__text
+              |Скидки на технику и туристические путевки
+          .works__item.works__item_blue
+            .works__text
+              |"Белая" зарплата и оформление по ТК РФ
+          .works__item.works__item_green
+            .works__text
+              |Возможность быстрого карьерного роста
