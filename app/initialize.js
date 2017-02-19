@@ -1,5 +1,10 @@
 import $ from "jquery";
 
 $(document).ready(() => {
-  console.log('yeah')
+
+  $('a[href^="#"]').on('click', function() {
+    let el = $(this).attr('href');
+    $('body').animate({scrollTop: $(el).offset().top}, 500);
+  });
+
 });
